@@ -44,7 +44,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.TlPenerima = new System.Windows.Forms.TextBox();
             this.NamaPenerima = new System.Windows.Forms.TextBox();
-            this.NikPendonor = new System.Windows.Forms.TextBox();
+            this.NikPenerima = new System.Windows.Forms.TextBox();
             this.dgvPenerima = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -222,12 +222,12 @@
             this.NamaPenerima.Size = new System.Drawing.Size(195, 20);
             this.NamaPenerima.TabIndex = 70;
             // 
-            // NikPendonor
+            // NikPenerima
             // 
-            this.NikPendonor.Location = new System.Drawing.Point(99, 86);
-            this.NikPendonor.Name = "NikPendonor";
-            this.NikPendonor.Size = new System.Drawing.Size(195, 20);
-            this.NikPendonor.TabIndex = 69;
+            this.NikPenerima.Location = new System.Drawing.Point(99, 86);
+            this.NikPenerima.Name = "NikPenerima";
+            this.NikPenerima.Size = new System.Drawing.Size(195, 20);
+            this.NikPenerima.TabIndex = 69;
             // 
             // dgvPenerima
             // 
@@ -404,7 +404,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.TlPenerima);
             this.Controls.Add(this.NamaPenerima);
-            this.Controls.Add(this.NikPendonor);
+            this.Controls.Add(this.NikPenerima);
             this.Controls.Add(this.dgvPenerima);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label18);
@@ -448,7 +448,7 @@
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox TlPenerima;
         private System.Windows.Forms.TextBox NamaPenerima;
-        private System.Windows.Forms.TextBox NikPendonor;
+        private System.Windows.Forms.TextBox NikPenerima;
         private System.Windows.Forms.DataGridView dgvPenerima;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label20;
