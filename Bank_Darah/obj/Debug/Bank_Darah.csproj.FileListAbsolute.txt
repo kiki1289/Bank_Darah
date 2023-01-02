@@ -1,0 +1,8 @@
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\bin\Debug\Bank_Darah.exe
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\bin\Debug\Bank_Darah.pdb
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.csprojResolveAssemblyReference.cache
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.Pendonor.resources
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.Properties.Resources.resources
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.exe
+D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.pdb
