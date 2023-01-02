@@ -6,3 +6,5 @@ D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.Properties.Resou
 D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
 D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.exe
 D:\semester 5\proNET\Bank_Darah\Bank_Darah\obj\Debug\Bank_Darah.pdb
+C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
+C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
