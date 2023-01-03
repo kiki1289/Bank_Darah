@@ -44,6 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Detail_donasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Detail_donasi.Designer.cs">
+      <DependentUpon>Detail_donasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donor.Designer.cs">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pendonor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     <Compile Include="StokDarah.Designer.cs">
       <DependentUpon>StokDarah.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Detail_donasi.resx">
+      <DependentUpon>Detail_donasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donor.resx">
+      <DependentUpon>Donor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pendonor.resx">
       <DependentUpon>Pendonor.cs</DependentUpon>
     </EmbeddedResource>

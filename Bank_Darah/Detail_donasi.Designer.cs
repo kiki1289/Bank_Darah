@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
+            this.dgvdetaildonasi = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dgvPendonor = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -40,25 +40,19 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCetak = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
-            this.btnSave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPendonor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdetaildonasi)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label3
+            // dgvdetaildonasi
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Blue;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(429, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 14);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Stok Darah";
+            this.dgvdetaildonasi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvdetaildonasi.Location = new System.Drawing.Point(25, 125);
+            this.dgvdetaildonasi.Name = "dgvdetaildonasi";
+            this.dgvdetaildonasi.Size = new System.Drawing.Size(673, 277);
+            this.dgvdetaildonasi.TabIndex = 73;
             // 
             // label6
             // 
@@ -102,21 +96,27 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Donasi";
             // 
-            // dgvPendonor
+            // label3
             // 
-            this.dgvPendonor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPendonor.Location = new System.Drawing.Point(17, 125);
-            this.dgvPendonor.Name = "dgvPendonor";
-            this.dgvPendonor.Size = new System.Drawing.Size(673, 277);
-            this.dgvPendonor.TabIndex = 68;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Blue;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(429, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(71, 14);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Stok Darah";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(-316, 194);
+            this.label13.Location = new System.Drawing.Point(-308, 194);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(39, 13);
-            this.label13.TabIndex = 59;
+            this.label13.TabIndex = 72;
             this.label13.Text = "No HP";
             // 
             // panel1
@@ -131,10 +131,10 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(-8, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 79);
-            this.panel1.TabIndex = 54;
+            this.panel1.TabIndex = 71;
             // 
             // label8
             // 
@@ -199,40 +199,39 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(90, 27);
             this.panel2.TabIndex = 12;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btnCetak
+            // 
+            this.btnCetak.Location = new System.Drawing.Point(611, 85);
+            this.btnCetak.Name = "btnCetak";
+            this.btnCetak.Size = new System.Drawing.Size(75, 23);
+            this.btnCetak.TabIndex = 75;
+            this.btnCetak.Text = "Cetak";
+            this.btnCetak.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(15, 99);
+            this.label20.Location = new System.Drawing.Point(23, 99);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(70, 13);
-            this.label20.TabIndex = 69;
+            this.label20.TabIndex = 74;
             this.label20.Text = "Detail Donasi";
-            // 
-            // btnSave
-            // 
-            this.btnSave.Location = new System.Drawing.Point(603, 85);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 70;
-            this.btnSave.Text = "Cetak";
-            this.btnSave.UseVisualStyleBackColor = true;
             // 
             // Detail_donasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 425);
-            this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.dgvPendonor);
+            this.ClientSize = new System.Drawing.Size(730, 432);
+            this.Controls.Add(this.dgvdetaildonasi);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnCetak);
+            this.Controls.Add(this.label20);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Detail_donasi";
             this.Text = "Detail_donasi";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPendonor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvdetaildonasi)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -242,11 +241,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView dgvdetaildonasi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dgvPendonor;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label8;
@@ -254,7 +253,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnCetak;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button btnSave;
     }
 }

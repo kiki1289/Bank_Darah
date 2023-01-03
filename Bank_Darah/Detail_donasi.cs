@@ -15,10 +15,5 @@ namespace Bank_Darah
         {
             InitializeComponent();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

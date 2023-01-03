@@ -17,3 +17,5 @@ C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\
 C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
 C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
 C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
