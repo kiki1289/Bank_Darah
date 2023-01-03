@@ -12,3 +12,5 @@ C:\Users\LENOVO\Downloads\ipg\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\D
 C:\Users\LENOVO\Downloads\ipg\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
 C:\Users\LENOVO\Downloads\ipg\part2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
 C:\Users\LENOVO\Downloads\ipg\part2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
+D:\KULIAHHHHHHHHHHHHHHH\SEMESTERRRRR_5\Framework\nenenenene\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
+D:\KULIAHHHHHHHHHHHHHHH\SEMESTERRRRR_5\Framework\nenenenene\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
