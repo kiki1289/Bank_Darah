@@ -19,3 +19,46 @@ C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\
 C:\Users\LENOVO\Downloads\Compressed\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
 C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
 C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.exe
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.pdb
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csprojResolveAssemblyReference.cache
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Detail_donasi.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Donor.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Login.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.MenuUtama.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Pendonor.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Penerima.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Properties.Resources.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
+C:\Users\LENOVO\Downloads\ipg\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.exe
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.pdb
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csprojResolveAssemblyReference.cache
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Detail_donasi.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Donor.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Login.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.MenuUtama.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Pendonor.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Penerima.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Properties.Resources.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
+E:\KINGSTON\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.exe
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.pdb
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csprojResolveAssemblyReference.cache
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Detail_donasi.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Donor.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Login.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.MenuUtama.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Pendonor.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Penerima.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Properties.Resources.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
+D:\PERKULIAHAN\SMT 5\PRO.NET\new\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache

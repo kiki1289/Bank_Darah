@@ -56,6 +56,19 @@
     <Compile Include="Donor.Designer.cs">
       <DependentUpon>Donor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Koneksi.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuUtama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuUtama.Designer.cs">
+      <DependentUpon>MenuUtama.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pendonor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donor.resx">
       <DependentUpon>Donor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuUtama.resx">
+      <DependentUpon>MenuUtama.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pendonor.resx">
       <DependentUpon>Pendonor.cs</DependentUpon>

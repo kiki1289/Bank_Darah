@@ -9,21 +9,11 @@ using System.Windows.Forms;
 
 namespace Bank_Darah
 {
-    public partial class Pendonor : Form
+    public partial class MenuUtama : Form
     {
-        public Pendonor()
+        public MenuUtama()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
