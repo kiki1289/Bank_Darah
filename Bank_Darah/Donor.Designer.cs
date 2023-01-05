@@ -41,10 +41,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.NamaPendonor = new System.Windows.Forms.TextBox();
-            this.NikPendonor = new System.Windows.Forms.TextBox();
+            this.NamaPenerima = new System.Windows.Forms.TextBox();
             this.Dgvstokdarah = new System.Windows.Forms.DataGridView();
-            this.label16 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,6 +53,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.NoDonasi = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.CboNikPenerima = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtButuh = new System.Windows.Forms.TextBox();
+            this.cbostokdarah = new System.Windows.Forms.ComboBox();
+            this.txtidDarah = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPenerima)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgvstokdarah)).BeginInit();
             this.panel1.SuspendLayout();
@@ -80,17 +85,18 @@
             // 
             // btnDonasikan
             // 
-            this.btnDonasikan.Location = new System.Drawing.Point(351, 434);
+            this.btnDonasikan.Location = new System.Drawing.Point(321, 481);
             this.btnDonasikan.Name = "btnDonasikan";
             this.btnDonasikan.Size = new System.Drawing.Size(75, 23);
             this.btnDonasikan.TabIndex = 106;
             this.btnDonasikan.Text = "Donasikan";
             this.btnDonasikan.UseVisualStyleBackColor = true;
+            this.btnDonasikan.Click += new System.EventHandler(this.btnDonasikan_Click);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(494, 347);
+            this.label17.Location = new System.Drawing.Point(401, 359);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(75, 13);
             this.label17.TabIndex = 105;
@@ -113,19 +119,20 @@
             this.DgvPenerima.Name = "DgvPenerima";
             this.DgvPenerima.Size = new System.Drawing.Size(418, 184);
             this.DgvPenerima.TabIndex = 114;
+            this.DgvPenerima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPenerima_CellContentClick);
             // 
             // Jmlterima
             // 
-            this.Jmlterima.Location = new System.Drawing.Point(592, 344);
+            this.Jmlterima.Location = new System.Drawing.Point(499, 356);
             this.Jmlterima.Name = "Jmlterima";
             this.Jmlterima.Size = new System.Drawing.Size(102, 20);
             this.Jmlterima.TabIndex = 113;
             // 
             // GoldarPendonor
             // 
-            this.GoldarPendonor.Location = new System.Drawing.Point(592, 318);
+            this.GoldarPendonor.Location = new System.Drawing.Point(625, 330);
             this.GoldarPendonor.Name = "GoldarPendonor";
-            this.GoldarPendonor.Size = new System.Drawing.Size(102, 20);
+            this.GoldarPendonor.Size = new System.Drawing.Size(50, 20);
             this.GoldarPendonor.TabIndex = 112;
             // 
             // Tglterima
@@ -186,19 +193,12 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Stok Darah";
             // 
-            // NamaPendonor
+            // NamaPenerima
             // 
-            this.NamaPendonor.Location = new System.Drawing.Point(105, 357);
-            this.NamaPendonor.Name = "NamaPendonor";
-            this.NamaPendonor.Size = new System.Drawing.Size(195, 20);
-            this.NamaPendonor.TabIndex = 110;
-            // 
-            // NikPendonor
-            // 
-            this.NikPendonor.Location = new System.Drawing.Point(105, 318);
-            this.NikPendonor.Name = "NikPendonor";
-            this.NikPendonor.Size = new System.Drawing.Size(195, 20);
-            this.NikPendonor.TabIndex = 109;
+            this.NamaPenerima.Location = new System.Drawing.Point(114, 383);
+            this.NamaPenerima.Name = "NamaPenerima";
+            this.NamaPenerima.Size = new System.Drawing.Size(195, 20);
+            this.NamaPenerima.TabIndex = 110;
             // 
             // Dgvstokdarah
             // 
@@ -207,15 +207,6 @@
             this.Dgvstokdarah.Name = "Dgvstokdarah";
             this.Dgvstokdarah.Size = new System.Drawing.Size(205, 184);
             this.Dgvstokdarah.TabIndex = 108;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(494, 321);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 13);
-            this.label16.TabIndex = 104;
-            this.label16.Text = "Golongan Darah";
             // 
             // label13
             // 
@@ -229,7 +220,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(24, 360);
+            this.label10.Location = new System.Drawing.Point(33, 386);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(35, 13);
             this.label10.TabIndex = 101;
@@ -251,6 +242,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 79);
             this.panel1.TabIndex = 99;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label11
             // 
@@ -333,17 +325,81 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(24, 318);
+            this.label9.Location = new System.Drawing.Point(33, 361);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(25, 13);
+            this.label9.Size = new System.Drawing.Size(72, 13);
             this.label9.TabIndex = 100;
-            this.label9.Text = "NIK";
+            this.label9.Text = "NIK Penerima";
+            // 
+            // NoDonasi
+            // 
+            this.NoDonasi.Location = new System.Drawing.Point(114, 314);
+            this.NoDonasi.Name = "NoDonasi";
+            this.NoDonasi.Size = new System.Drawing.Size(195, 20);
+            this.NoDonasi.TabIndex = 118;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(33, 314);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 117;
+            this.label4.Text = "No Donasi";
+            // 
+            // CboNikPenerima
+            // 
+            this.CboNikPenerima.FormattingEnabled = true;
+            this.CboNikPenerima.Location = new System.Drawing.Point(114, 356);
+            this.CboNikPenerima.Name = "CboNikPenerima";
+            this.CboNikPenerima.Size = new System.Drawing.Size(195, 21);
+            this.CboNikPenerima.TabIndex = 119;
+            this.CboNikPenerima.SelectedIndexChanged += new System.EventHandler(this.CboNikPenerima_SelectedIndexChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(401, 333);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(71, 13);
+            this.label12.TabIndex = 120;
+            this.label12.Text = "Jumlah Butuh";
+            // 
+            // txtButuh
+            // 
+            this.txtButuh.Location = new System.Drawing.Point(499, 330);
+            this.txtButuh.Name = "txtButuh";
+            this.txtButuh.Size = new System.Drawing.Size(102, 20);
+            this.txtButuh.TabIndex = 121;
+            // 
+            // cbostokdarah
+            // 
+            this.cbostokdarah.FormattingEnabled = true;
+            this.cbostokdarah.Location = new System.Drawing.Point(625, 356);
+            this.cbostokdarah.Name = "cbostokdarah";
+            this.cbostokdarah.Size = new System.Drawing.Size(50, 21);
+            this.cbostokdarah.TabIndex = 122;
+            this.cbostokdarah.SelectedIndexChanged += new System.EventHandler(this.cbostokdarah_SelectedIndexChanged);
+            // 
+            // txtidDarah
+            // 
+            this.txtidDarah.Location = new System.Drawing.Point(681, 356);
+            this.txtidDarah.Name = "txtidDarah";
+            this.txtidDarah.Size = new System.Drawing.Size(33, 20);
+            this.txtidDarah.TabIndex = 123;
             // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 487);
+            this.ClientSize = new System.Drawing.Size(725, 540);
+            this.Controls.Add(this.txtidDarah);
+            this.Controls.Add(this.cbostokdarah);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtButuh);
+            this.Controls.Add(this.CboNikPenerima);
+            this.Controls.Add(this.NoDonasi);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.btnDonasikan);
@@ -354,17 +410,17 @@
             this.Controls.Add(this.GoldarPendonor);
             this.Controls.Add(this.Tglterima);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.NamaPendonor);
-            this.Controls.Add(this.NikPendonor);
+            this.Controls.Add(this.NamaPenerima);
             this.Controls.Add(this.Dgvstokdarah);
-            this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Donor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Donor";
+            this.Load += new System.EventHandler(this.Donor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvPenerima)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgvstokdarah)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -389,10 +445,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox NamaPendonor;
-        private System.Windows.Forms.TextBox NikPendonor;
+        private System.Windows.Forms.TextBox NamaPenerima;
         private System.Windows.Forms.DataGridView Dgvstokdarah;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel1;
@@ -403,5 +457,12 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox NoDonasi;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox CboNikPenerima;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtButuh;
+        private System.Windows.Forms.ComboBox cbostokdarah;
+        private System.Windows.Forms.TextBox txtidDarah;
     }
 }

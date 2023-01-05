@@ -290,6 +290,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "StatusDarah";
             this.Text = "StatusDarah";
+            this.Load += new System.EventHandler(this.StatusDarah_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

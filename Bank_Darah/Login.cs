@@ -48,5 +48,10 @@ namespace Bank_Darah
             koneksi.Close();
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

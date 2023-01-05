@@ -15,5 +15,10 @@ namespace Bank_Darah
         {
             InitializeComponent();
         }
+
+        private void StatusDarah_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
