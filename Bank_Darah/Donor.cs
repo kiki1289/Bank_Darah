@@ -19,7 +19,22 @@ namespace Bank_Darah
         {
             InitializeComponent();
         }
-  
+
+        private string nodonasi
+        {  
+            get
+            {
+                con.Open();
+                string nomor = "DN-0001";
+                SqlCommand cmd = new SqlCommand("select max(right(idDonasi,4)) from donasi", con);
+                SqlDataReader rd = cmd.ExecuteReader();
+                rd.Read();
+                if (rd[0].ToString() != "")
+                    nomor = "DN-" + (int.Parse(rd[0].ToString()) + 1).ToString("000");
+                rd.Close();
+                return nomor;
+            }
+        }
 
         private void showdatapenerima()
         {
@@ -86,6 +101,7 @@ namespace Bank_Darah
 
         private void Donor_Load(object sender, EventArgs e)
         {
+            NoDonasi.Text = nodonasi;
             showdatapenerima();
             isicombopenerima();
             showdatastok();
