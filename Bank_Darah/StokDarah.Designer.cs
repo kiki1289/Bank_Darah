@@ -31,12 +31,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvStokdarah = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.dgvStokdarah = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStokdarah)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStokdarah)).BeginInit();
             this.SuspendLayout();
             // 
             // label13
@@ -69,14 +69,6 @@
             this.panel1.TabIndex = 99;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // dgvStokdarah
-            // 
-            this.dgvStokdarah.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStokdarah.Location = new System.Drawing.Point(99, 153);
-            this.dgvStokdarah.Name = "dgvStokdarah";
-            this.dgvStokdarah.Size = new System.Drawing.Size(515, 207);
-            this.dgvStokdarah.TabIndex = 104;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkBlue;
@@ -100,6 +92,14 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Stok Darah";
             // 
+            // dgvStokdarah
+            // 
+            this.dgvStokdarah.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStokdarah.Location = new System.Drawing.Point(99, 153);
+            this.dgvStokdarah.Name = "dgvStokdarah";
+            this.dgvStokdarah.Size = new System.Drawing.Size(515, 207);
+            this.dgvStokdarah.TabIndex = 104;
+            // 
             // StokDarah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,10 +112,11 @@
             this.Name = "StokDarah";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
+            this.Load += new System.EventHandler(this.StokDarah_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvStokdarah)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStokdarah)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

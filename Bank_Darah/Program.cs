@@ -15,7 +15,7 @@ namespace Bank_Darah
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Pendonor());
+            Application.Run(new StokDarah());
         }
     }
 }
