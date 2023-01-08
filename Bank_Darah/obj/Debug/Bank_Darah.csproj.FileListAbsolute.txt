@@ -137,3 +137,18 @@ D:\github\Bank_Darah-main (1)\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Pr
 D:\github\Bank_Darah-main (1)\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
 D:\github\Bank_Darah-main (1)\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
 D:\github\Bank_Darah-main (1)\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.exe
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.pdb
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csprojResolveAssemblyReference.cache
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Detail_donasi.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Donor.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Login.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.MenuUtama.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Pendonor.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Penerima.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Properties.Resources.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.exe
+D:\github\2\Bank_Darah-main\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.pdb

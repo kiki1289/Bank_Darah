@@ -52,9 +52,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.keluar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.keluar = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.cboPetugas = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPendonor)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -167,6 +170,7 @@
             this.btnDelete.TabIndex = 41;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label17
             // 
@@ -259,18 +263,14 @@
             this.panel1.TabIndex = 30;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // keluar
+            // panel3
             // 
-            this.keluar.BackColor = System.Drawing.Color.Blue;
-            this.keluar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.keluar.ForeColor = System.Drawing.Color.Cornsilk;
-            this.keluar.Location = new System.Drawing.Point(600, 451);
-            this.keluar.Name = "keluar";
-            this.keluar.Size = new System.Drawing.Size(75, 32);
-            this.keluar.TabIndex = 54;
-            this.keluar.Text = "Keluar";
-            this.keluar.UseVisualStyleBackColor = false;
-            this.keluar.Click += new System.EventHandler(this.keluar_Click);
+            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(141, 16);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(449, 46);
+            this.panel3.TabIndex = 15;
             // 
             // label1
             // 
@@ -286,20 +286,53 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Pendonor";
             // 
-            // panel3
+            // keluar
             // 
-            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(141, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(449, 46);
-            this.panel3.TabIndex = 15;
+            this.keluar.BackColor = System.Drawing.Color.Blue;
+            this.keluar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.keluar.ForeColor = System.Drawing.Color.Cornsilk;
+            this.keluar.Location = new System.Drawing.Point(600, 451);
+            this.keluar.Name = "keluar";
+            this.keluar.Size = new System.Drawing.Size(75, 32);
+            this.keluar.TabIndex = 54;
+            this.keluar.Text = "Keluar";
+            this.keluar.UseVisualStyleBackColor = false;
+            this.keluar.Click += new System.EventHandler(this.keluar_Click);
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(572, 224);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(51, 20);
+            this.txtUsername.TabIndex = 86;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
+            // 
+            // cboPetugas
+            // 
+            this.cboPetugas.FormattingEnabled = true;
+            this.cboPetugas.Location = new System.Drawing.Point(445, 223);
+            this.cboPetugas.Name = "cboPetugas";
+            this.cboPetugas.Size = new System.Drawing.Size(121, 21);
+            this.cboPetugas.TabIndex = 85;
+            this.cboPetugas.SelectedIndexChanged += new System.EventHandler(this.cboPetugas_SelectedIndexChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(369, 223);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 84;
+            this.label4.Text = "Petugas";
             // 
             // Pendonor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 486);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.cboPetugas);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.keluar);
             this.Controls.Add(this.DonorPendonor);
             this.Controls.Add(this.GoldarPendonor);
@@ -328,6 +361,7 @@
             this.Name = "Pendonor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pendonor";
+            this.Load += new System.EventHandler(this.Pendonor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPendonor)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -366,6 +400,9 @@
         private System.Windows.Forms.Button keluar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.ComboBox cboPetugas;
+        private System.Windows.Forms.Label label4;
     }
 }
 
