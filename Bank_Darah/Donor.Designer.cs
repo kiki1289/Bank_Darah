@@ -43,8 +43,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.NoDonasi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -54,6 +54,8 @@
             this.cbostokdarah = new System.Windows.Forms.ComboBox();
             this.txtidDarah = new System.Windows.Forms.TextBox();
             this.keluar = new System.Windows.Forms.Button();
+            this.cbopetugas = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPenerima)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgvstokdarah)).BeginInit();
             this.panel1.SuspendLayout();
@@ -192,6 +194,15 @@
             this.panel1.TabIndex = 99;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Location = new System.Drawing.Point(132, 14);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(449, 46);
+            this.panel3.TabIndex = 14;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -205,15 +216,6 @@
             this.label11.Size = new System.Drawing.Size(92, 28);
             this.label11.TabIndex = 13;
             this.label11.Text = "Donasi";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Location = new System.Drawing.Point(132, 14);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(449, 46);
-            this.panel3.TabIndex = 14;
             // 
             // label9
             // 
@@ -295,11 +297,30 @@
             this.keluar.UseVisualStyleBackColor = false;
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
             // 
+            // cbopetugas
+            // 
+            this.cbopetugas.FormattingEnabled = true;
+            this.cbopetugas.Location = new System.Drawing.Point(499, 427);
+            this.cbopetugas.Name = "cbopetugas";
+            this.cbopetugas.Size = new System.Drawing.Size(102, 21);
+            this.cbopetugas.TabIndex = 127;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(401, 430);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(46, 13);
+            this.label15.TabIndex = 126;
+            this.label15.Text = "Petugas";
+            // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 540);
+            this.Controls.Add(this.cbopetugas);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.keluar);
             this.Controls.Add(this.txtidDarah);
             this.Controls.Add(this.cbostokdarah);
@@ -366,5 +387,7 @@
         private System.Windows.Forms.ComboBox cbostokdarah;
         private System.Windows.Forms.TextBox txtidDarah;
         private System.Windows.Forms.Button keluar;
+        private System.Windows.Forms.ComboBox cbopetugas;
+        private System.Windows.Forms.Label label15;
     }
 }

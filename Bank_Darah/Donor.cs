@@ -14,7 +14,7 @@ namespace Bank_Darah
     {
         ///Kobeksi DB 
         SqlConnection con = new SqlConnection
-        (@"Data Source=DESKTOP-RIZAL;Initial Catalog=Bank_Darah;Integrated Security=true");
+        (@"Data Source=KIKI;Initial Catalog=Bank_Darah4;Integrated Security=true");
         public Donor()
         {
             InitializeComponent();
@@ -80,6 +80,19 @@ namespace Bank_Darah
             CboNikPenerima.DisplayMember = "nikpenerima";
 
         }
+        private void isicombopetugas()
+        {
+            SqlCommand cmd = new SqlCommand();
+            cmd.Connection = con;
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "Select username from admin";
+            DataSet ds1 = new DataSet();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(ds1, "admin");
+            cbopetugas.DataSource = ds1.Tables["admin"];
+            cbopetugas.DisplayMember = "username";
+
+        }
 
         private void isicombostokdarah()
         {
@@ -104,6 +117,7 @@ namespace Bank_Darah
             NoDonasi.Text = nodonasi;
             showdatapenerima();
             isicombopenerima();
+            isicombopetugas();
             showdatastok();
             isicombostokdarah();
             Tglterima.Text = DateTime.Now.ToString("dd/MM/yyyy");
@@ -147,6 +161,11 @@ namespace Bank_Darah
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
         ///hapus colom nik donasi,
+            SqlCommand cmd2 = new SqlCommand();
+            cmd2.Connection = con;
+            cmd2.CommandText = "insert into detailDonasi values('"+cbopetugas.Text+"','" + NoDonasi.Text +"')";
+            cmd2.CommandType = CommandType.Text;
+            cmd2.ExecuteNonQuery();
 
 
              berhenti:

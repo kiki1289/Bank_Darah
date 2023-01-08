@@ -50,11 +50,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.keluar = new System.Windows.Forms.Button();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.cboPetugas = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPenerima)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -110,6 +113,7 @@
             this.btnSave.TabIndex = 64;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+      
             // 
             // TlPenerima
             // 
@@ -166,6 +170,7 @@
             this.btnDelete.TabIndex = 65;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+   
             // 
             // label15
             // 
@@ -239,6 +244,30 @@
             this.panel1.Size = new System.Drawing.Size(730, 79);
             this.panel1.TabIndex = 54;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(141, 16);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(449, 46);
+            this.panel3.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Navy;
+            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(175, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 28);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Penerima";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -257,30 +286,6 @@
             this.label16.TabIndex = 62;
             this.label16.Text = "Golongan Darah";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Navy;
-            this.label1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(175, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 28);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Penerima";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(141, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(449, 46);
-            this.panel3.TabIndex = 16;
-            // 
             // keluar
             // 
             this.keluar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -295,11 +300,38 @@
             this.keluar.UseVisualStyleBackColor = false;
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
             // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(572, 225);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(51, 20);
+            this.txtUsername.TabIndex = 83;
+            // 
+            // cboPetugas
+            // 
+            this.cboPetugas.FormattingEnabled = true;
+            this.cboPetugas.Location = new System.Drawing.Point(445, 224);
+            this.cboPetugas.Name = "cboPetugas";
+            this.cboPetugas.Size = new System.Drawing.Size(121, 21);
+            this.cboPetugas.TabIndex = 82;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(369, 224);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 13);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "Petugas";
+            // 
             // Penerima
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 489);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.cboPetugas);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.keluar);
             this.Controls.Add(this.DonorPenerima);
             this.Controls.Add(this.GoldarPenerima);
@@ -328,6 +360,7 @@
             this.Name = "Penerima";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Penerima";
+            this.Load += new System.EventHandler(this.Penerima_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPenerima)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -366,5 +399,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button keluar;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.ComboBox cboPetugas;
+        private System.Windows.Forms.Label label4;
     }
 }

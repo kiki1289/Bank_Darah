@@ -16,6 +16,12 @@ namespace Bank_Darah
             InitializeComponent();
         }
 
+
+        private void cboPetugas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -29,5 +35,13 @@ namespace Bank_Darah
                 this.Close();
             }
         }
+
+        private void Penerima_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+      
+
     }
 }
