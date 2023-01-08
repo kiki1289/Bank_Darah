@@ -83,6 +83,7 @@
             this.TldPenerima.Name = "TldPenerima";
             this.TldPenerima.Size = new System.Drawing.Size(195, 20);
             this.TldPenerima.TabIndex = 75;
+            this.TldPenerima.TextChanged += new System.EventHandler(this.TldPenerima_TextChanged);
             // 
             // AlamatPenerima
             // 
@@ -113,7 +114,7 @@
             this.btnSave.TabIndex = 64;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
-      
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // TlPenerima
             // 
@@ -170,7 +171,7 @@
             this.btnDelete.TabIndex = 65;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-   
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label15
             // 
@@ -306,6 +307,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(51, 20);
             this.txtUsername.TabIndex = 83;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // cboPetugas
             // 
@@ -314,6 +316,7 @@
             this.cboPetugas.Name = "cboPetugas";
             this.cboPetugas.Size = new System.Drawing.Size(121, 21);
             this.cboPetugas.TabIndex = 82;
+            this.cboPetugas.SelectedIndexChanged += new System.EventHandler(this.cboPetugas_SelectedIndexChanged_1);
             // 
             // label4
             // 

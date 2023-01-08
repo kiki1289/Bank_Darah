@@ -85,12 +85,12 @@ namespace Bank_Darah
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select username from admin";
+            cmd.CommandText = "Select nama from admin";
             DataSet ds1 = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             da.Fill(ds1, "admin");
             cbopetugas.DataSource = ds1.Tables["admin"];
-            cbopetugas.DisplayMember = "username";
+            cbopetugas.DisplayMember = "nama";
 
         }
 
@@ -163,7 +163,7 @@ namespace Bank_Darah
         ///hapus colom nik donasi,
             SqlCommand cmd2 = new SqlCommand();
             cmd2.Connection = con;
-            cmd2.CommandText = "insert into detailDonasi values('"+cbopetugas.Text+"','" + NoDonasi.Text +"')";
+            cmd2.CommandText = "insert into detailDonasi values('"+txtUsername.Text+"','" + NoDonasi.Text +"')";
             cmd2.CommandType = CommandType.Text;
             cmd2.ExecuteNonQuery();
 
@@ -192,6 +192,20 @@ namespace Bank_Darah
             if (Tanya == DialogResult.Yes)
             {
                 this.Close();
+            }
+        }
+
+        private void cbopetugas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            con.Close();
+            SqlCommand cmd = new SqlCommand("select * from admin where nama='" + cbopetugas.Text + "'", con);
+            con.Open();
+            SqlDataReader rd = cmd.ExecuteReader();
+            if (rd.HasRows)
+            {
+                rd.Read();
+                txtUsername.Text = rd[0].ToString();
+                rd.Close();
             }
         }
     }

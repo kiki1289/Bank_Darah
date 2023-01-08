@@ -56,6 +56,7 @@
             this.keluar = new System.Windows.Forms.Button();
             this.cbopetugas = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DgvPenerima)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgvstokdarah)).BeginInit();
             this.panel1.SuspendLayout();
@@ -304,6 +305,7 @@
             this.cbopetugas.Name = "cbopetugas";
             this.cbopetugas.Size = new System.Drawing.Size(102, 21);
             this.cbopetugas.TabIndex = 127;
+            this.cbopetugas.SelectedIndexChanged += new System.EventHandler(this.cbopetugas_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -314,11 +316,19 @@
             this.label15.TabIndex = 126;
             this.label15.Text = "Petugas";
             // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(625, 428);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(51, 20);
+            this.txtUsername.TabIndex = 128;
+            // 
             // Donor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 540);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.cbopetugas);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.keluar);
@@ -389,5 +399,6 @@
         private System.Windows.Forms.Button keluar;
         private System.Windows.Forms.ComboBox cbopetugas;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtUsername;
     }
 }
