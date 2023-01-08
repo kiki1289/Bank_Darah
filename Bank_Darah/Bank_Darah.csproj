@@ -121,6 +121,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="StatusDarah.resx">
       <DependentUpon>StatusDarah.cs</DependentUpon>
@@ -137,6 +138,42 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pendonor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\penerima.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\111-1111079_logo-templates-png-download-template-logo-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tambah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tambahjadi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in-stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood-bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

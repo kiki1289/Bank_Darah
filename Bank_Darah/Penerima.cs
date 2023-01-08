@@ -15,5 +15,19 @@ namespace Bank_Darah
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void keluar_Click(object sender, EventArgs e)
+        {
+            var Tanya = MessageBox.Show("apakah anda yakin", "keluar", MessageBoxButtons.YesNo);
+            if (Tanya == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

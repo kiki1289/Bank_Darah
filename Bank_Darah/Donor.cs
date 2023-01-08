@@ -14,14 +14,14 @@ namespace Bank_Darah
     {
         ///Kobeksi DB 
         SqlConnection con = new SqlConnection
-        (@"Data Source=DESKTOP-27AG9DA;Initial Catalog=Bank_Darah;Integrated Security=true");
+        (@"Data Source=DESKTOP-RIZAL;Initial Catalog=Bank_Darah;Integrated Security=true");
         public Donor()
         {
             InitializeComponent();
         }
 
         private string nodonasi
-        {  
+        {
             get
             {
                 con.Open();
@@ -96,7 +96,7 @@ namespace Bank_Darah
         }
         private void DgvPenerima_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
+
         }
 
         private void Donor_Load(object sender, EventArgs e)
@@ -107,8 +107,8 @@ namespace Bank_Darah
             showdatastok();
             isicombostokdarah();
             Tglterima.Text = DateTime.Now.ToString("dd/MM/yyyy");
-          
-          
+
+
         }
 
         private void CboNikPenerima_SelectedIndexChanged(object sender, EventArgs e)
@@ -134,7 +134,7 @@ namespace Bank_Darah
 
         private void btnDonasikan_Click(object sender, EventArgs e)
         {
-            if (Jmlterima.Text == ""&&Tglterima.Text == "")
+            if (Jmlterima.Text == "" && Tglterima.Text == "")
             {
                 MessageBox.Show("Jumlah Terima dan Tanggal Terima Harap di Isi !!");
                 goto berhenti;
@@ -146,9 +146,9 @@ namespace Bank_Darah
                                 Tglterima.Text + "','" + Jmlterima.Text + "','" + txtidDarah.Text + "','" + CboNikPenerima.Text + "')";
             cmd.CommandType = CommandType.Text;
             cmd.ExecuteNonQuery();
-            ///hapus colom nik donasi,
-           
-          
+        ///hapus colom nik donasi,
+
+
              berhenti:
             ;
         }
@@ -164,6 +164,15 @@ namespace Bank_Darah
                 rd.Read();
                 txtidDarah.Text = rd[0].ToString();
                 rd.Close();
+            }
+        }
+
+        private void keluar_Click(object sender, EventArgs e)
+        {
+            var Tanya = MessageBox.Show("apakah anda yakin", "keluar", MessageBoxButtons.YesNo);
+            if (Tanya == DialogResult.Yes)
+            {
+                this.Close();
             }
         }
     }

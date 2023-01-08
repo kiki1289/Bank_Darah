@@ -15,5 +15,11 @@ namespace Bank_Darah
         {
             InitializeComponent();
         }
+
+        private void keluar_Click(object sender, EventArgs e)
+        {
+           
+            }
+        }
     }
-}
+
