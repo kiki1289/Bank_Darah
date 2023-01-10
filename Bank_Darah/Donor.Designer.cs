@@ -67,11 +67,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(552, 95);
+            this.label19.Location = new System.Drawing.Point(401, 96);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(71, 13);
+            this.label19.Size = new System.Drawing.Size(46, 13);
             this.label19.TabIndex = 115;
-            this.label19.Text = "Stok Darah";
+            this.label19.Text = "Donasi";
             // 
             // label20
             // 
@@ -118,7 +118,7 @@
             this.DgvPenerima.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvPenerima.Location = new System.Drawing.Point(26, 116);
             this.DgvPenerima.Name = "DgvPenerima";
-            this.DgvPenerima.Size = new System.Drawing.Size(418, 184);
+            this.DgvPenerima.Size = new System.Drawing.Size(333, 184);
             this.DgvPenerima.TabIndex = 114;
             this.DgvPenerima.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvPenerima_CellContentClick);
             // 
@@ -162,9 +162,9 @@
             // Dgvstokdarah
             // 
             this.Dgvstokdarah.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dgvstokdarah.Location = new System.Drawing.Point(491, 116);
+            this.Dgvstokdarah.Location = new System.Drawing.Point(404, 116);
             this.Dgvstokdarah.Name = "Dgvstokdarah";
-            this.Dgvstokdarah.Size = new System.Drawing.Size(205, 184);
+            this.Dgvstokdarah.Size = new System.Drawing.Size(292, 184);
             this.Dgvstokdarah.TabIndex = 108;
             // 
             // label13

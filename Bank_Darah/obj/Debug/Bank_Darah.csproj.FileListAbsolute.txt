@@ -167,3 +167,4 @@ D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Pr
 D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StatusDarah.resources
 D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
 D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
+D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Laporan.resources

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label13 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,16 +47,6 @@
             this.label13.TabIndex = 103;
             this.label13.Text = "No HP";
             this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(79, 125);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
-            this.label9.TabIndex = 100;
-            this.label9.Text = "Stok Darah :";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // panel1
             // 
@@ -86,7 +75,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(175, 8);
+            this.label1.Location = new System.Drawing.Point(144, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 28);
             this.label1.TabIndex = 13;
@@ -95,9 +84,9 @@
             // dgvStokdarah
             // 
             this.dgvStokdarah.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvStokdarah.Location = new System.Drawing.Point(99, 153);
+            this.dgvStokdarah.Location = new System.Drawing.Point(186, 146);
             this.dgvStokdarah.Name = "dgvStokdarah";
-            this.dgvStokdarah.Size = new System.Drawing.Size(515, 207);
+            this.dgvStokdarah.Size = new System.Drawing.Size(344, 207);
             this.dgvStokdarah.TabIndex = 104;
             // 
             // StokDarah
@@ -107,7 +96,6 @@
             this.ClientSize = new System.Drawing.Size(712, 420);
             this.Controls.Add(this.dgvStokdarah);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
             this.Name = "StokDarah";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -125,7 +113,6 @@
         #endregion
 
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dgvStokdarah;
         private System.Windows.Forms.Panel panel3;

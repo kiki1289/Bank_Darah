@@ -107,7 +107,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(369, 195);
+            this.btnSave.Location = new System.Drawing.Point(369, 221);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 40;
@@ -164,7 +164,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(450, 195);
+            this.btnDelete.Location = new System.Drawing.Point(450, 221);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 41;
@@ -301,7 +301,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(572, 224);
+            this.txtUsername.Location = new System.Drawing.Point(592, 195);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(51, 20);
             this.txtUsername.TabIndex = 86;
@@ -310,7 +310,7 @@
             // cboPetugas
             // 
             this.cboPetugas.FormattingEnabled = true;
-            this.cboPetugas.Location = new System.Drawing.Point(445, 223);
+            this.cboPetugas.Location = new System.Drawing.Point(465, 194);
             this.cboPetugas.Name = "cboPetugas";
             this.cboPetugas.Size = new System.Drawing.Size(121, 21);
             this.cboPetugas.TabIndex = 85;
@@ -319,7 +319,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(369, 223);
+            this.label4.Location = new System.Drawing.Point(366, 194);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 84;

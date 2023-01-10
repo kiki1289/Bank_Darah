@@ -29,5 +29,10 @@ namespace Bank_Darah
                 this.Close();
             }
         }
+
+        private void NikPendonor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

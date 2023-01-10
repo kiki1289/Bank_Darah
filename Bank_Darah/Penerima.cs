@@ -72,14 +72,50 @@ namespace Bank_Darah
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-           
+
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO penerima VALUES ('" + NikPenerima.Text + "','" + NamaPenerima.Text + "','" + TlPenerima.Text + "','" + JkPenerima.Text + "','" + NoPenerima.Text + "','" + GoldarPenerima.Text + "','" + AlamatPenerima.Text + "','" + TldPenerima.Text + "','" + int.Parse(DonorPenerima.Text) + "','" + txtUsername.Text + "')";
+            cmd.CommandText = "ADDPENERIMA1";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter nikPenerima = new SqlParameter("@nikpenerima", SqlDbType.VarChar);
+            SqlParameter namaPenerima = new SqlParameter("@namapenerima", SqlDbType.VarChar);
+            SqlParameter tanggalLahirPenerima = new SqlParameter("@tanggal_lahirpenerima", SqlDbType.VarChar);
+            SqlParameter genderPenerima = new SqlParameter("@gender", SqlDbType.VarChar);
+            SqlParameter nohpPenerima = new SqlParameter("@nohp", SqlDbType.VarChar);
+            SqlParameter golDarPenerima = new SqlParameter("@goldar", SqlDbType.VarChar);
+            SqlParameter alamatPenerima = new SqlParameter("@alamat", SqlDbType.VarChar);
+            SqlParameter tglinputdata = new SqlParameter("@tglinputdata", SqlDbType.VarChar);
+            SqlParameter jmlButuh = new SqlParameter("@jmlbutuh", SqlDbType.Int);
+            SqlParameter username = new SqlParameter("@username", SqlDbType.VarChar);
+
+            nikPenerima.Value = NikPenerima.Text;
+            namaPenerima.Value = NamaPenerima.Text;
+            tanggalLahirPenerima.Value = TlPenerima.Text;
+            genderPenerima.Value = JkPenerima.Text;
+            nohpPenerima.Value = NoPenerima.Text;
+            golDarPenerima.Value = GoldarPenerima.Text;
+            alamatPenerima.Value = AlamatPenerima.Text;
+            tglinputdata.Value = TldPenerima.Text;
+            jmlButuh.Value = DonorPenerima.Text;
+            username.Value = txtUsername.Text;
+
+            cmd.Parameters.Add(nikPenerima);
+            cmd.Parameters.Add(namaPenerima);
+            cmd.Parameters.Add(tanggalLahirPenerima);
+            cmd.Parameters.Add(genderPenerima);
+            cmd.Parameters.Add(nohpPenerima);
+            cmd.Parameters.Add(golDarPenerima);
+            cmd.Parameters.Add(alamatPenerima);
+            cmd.Parameters.Add(tglinputdata);
+            cmd.Parameters.Add(jmlButuh);
+            cmd.Parameters.Add(username);
+
             cmd.ExecuteNonQuery();
-          
+
+
             showdata();
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -112,6 +148,11 @@ namespace Bank_Darah
         }
 
         private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

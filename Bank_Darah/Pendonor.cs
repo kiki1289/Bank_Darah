@@ -54,9 +54,44 @@ namespace Bank_Darah
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO pendonor VALUES ('" + NikPendonor.Text + "','" + NamaPendonor.Text + "','" + TlPendonor.Text + "','" + JkPendonor.Text + "','" + NoPendonor.Text + "','" + GoldarPendonor.Text + "','" + AlamatPendonor.Text + "','" + TldPendonor.Text + "','" + int.Parse(DonorPendonor.Text) + "','" + txtUsername.Text + "')";
+            cmd.CommandText = "ADDPENDONOR";
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            SqlParameter nikPendonor = new SqlParameter("@nikpendonor", SqlDbType.VarChar);
+            SqlParameter namaPendonor = new SqlParameter("@namapendonor", SqlDbType.VarChar);
+            SqlParameter tanggal_lahirPendonor = new SqlParameter("@tanggal_lahirpendonor", SqlDbType.VarChar);
+            SqlParameter gender = new SqlParameter("@gender", SqlDbType.VarChar);
+            SqlParameter nohp = new SqlParameter("@nohp", SqlDbType.VarChar);
+            SqlParameter golDar = new SqlParameter("@goldar", SqlDbType.VarChar);
+            SqlParameter alamat = new SqlParameter("@alamat", SqlDbType.VarChar);
+            SqlParameter tglDonor = new SqlParameter("@tgldonor", SqlDbType.VarChar);
+            SqlParameter nDonor = new SqlParameter("@ndonor", SqlDbType.Int);
+            SqlParameter username = new SqlParameter("@username", SqlDbType.VarChar);
+
+            nikPendonor.Value = NikPendonor.Text;
+            namaPendonor.Value = NamaPendonor.Text;
+            tanggal_lahirPendonor.Value = TlPendonor.Text;
+            gender.Value = JkPendonor.Text;
+            nohp.Value = NoPendonor.Text;
+            golDar.Value = GoldarPendonor.Text;
+            alamat.Value = AlamatPendonor.Text;
+            tglDonor.Value = TldPendonor.Text;
+            nDonor.Value = DonorPendonor.Text;
+            username.Value = txtUsername.Text;
+
+            cmd.Parameters.Add(nikPendonor);
+            cmd.Parameters.Add(namaPendonor);
+            cmd.Parameters.Add(tanggal_lahirPendonor);
+            cmd.Parameters.Add(gender);
+            cmd.Parameters.Add(nohp);
+            cmd.Parameters.Add(golDar);
+            cmd.Parameters.Add(alamat);
+            cmd.Parameters.Add(tglDonor);
+            cmd.Parameters.Add(nDonor);
+            cmd.Parameters.Add(username);
+
             cmd.ExecuteNonQuery();
+
 
             showdata();
         }

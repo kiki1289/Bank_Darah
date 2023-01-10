@@ -37,10 +37,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.NikPendonor = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.CbStatus = new System.Windows.Forms.ComboBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CbStatus = new System.Windows.Forms.ComboBox();
             this.keluar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -111,6 +111,7 @@
             this.NikPendonor.Name = "NikPendonor";
             this.NikPendonor.Size = new System.Drawing.Size(284, 20);
             this.NikPendonor.TabIndex = 93;
+            this.NikPendonor.TextChanged += new System.EventHandler(this.NikPendonor_TextChanged);
             // 
             // panel1
             // 
@@ -120,23 +121,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 79);
             this.panel1.TabIndex = 78;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(250, 231);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(37, 13);
-            this.label11.TabIndex = 97;
-            this.label11.Text = "Status";
-            // 
-            // CbStatus
-            // 
-            this.CbStatus.FormattingEnabled = true;
-            this.CbStatus.Location = new System.Drawing.Point(307, 228);
-            this.CbStatus.Name = "CbStatus";
-            this.CbStatus.Size = new System.Drawing.Size(192, 21);
-            this.CbStatus.TabIndex = 98;
             // 
             // panel3
             // 
@@ -160,6 +144,23 @@
             this.label1.Size = new System.Drawing.Size(162, 28);
             this.label1.TabIndex = 13;
             this.label1.Text = "Status Darah";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(250, 231);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(37, 13);
+            this.label11.TabIndex = 97;
+            this.label11.Text = "Status";
+            // 
+            // CbStatus
+            // 
+            this.CbStatus.FormattingEnabled = true;
+            this.CbStatus.Location = new System.Drawing.Point(307, 228);
+            this.CbStatus.Name = "CbStatus";
+            this.CbStatus.Size = new System.Drawing.Size(192, 21);
+            this.CbStatus.TabIndex = 98;
             // 
             // keluar
             // 

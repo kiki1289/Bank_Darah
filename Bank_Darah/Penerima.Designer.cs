@@ -108,7 +108,7 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(369, 195);
+            this.btnSave.Location = new System.Drawing.Point(369, 221);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 64;
@@ -165,7 +165,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(450, 195);
+            this.btnDelete.Location = new System.Drawing.Point(450, 221);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 65;
@@ -244,6 +244,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(730, 79);
             this.panel1.TabIndex = 54;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel3
             // 
@@ -303,7 +304,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(572, 225);
+            this.txtUsername.Location = new System.Drawing.Point(590, 196);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(51, 20);
             this.txtUsername.TabIndex = 83;
@@ -312,7 +313,7 @@
             // cboPetugas
             // 
             this.cboPetugas.FormattingEnabled = true;
-            this.cboPetugas.Location = new System.Drawing.Point(445, 224);
+            this.cboPetugas.Location = new System.Drawing.Point(463, 195);
             this.cboPetugas.Name = "cboPetugas";
             this.cboPetugas.Size = new System.Drawing.Size(121, 21);
             this.cboPetugas.TabIndex = 82;
@@ -321,7 +322,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(369, 224);
+            this.label4.Location = new System.Drawing.Point(367, 195);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 81;

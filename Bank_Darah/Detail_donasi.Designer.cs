@@ -31,8 +31,8 @@
             this.dgvdetaildonasi = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdetaildonasi)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -64,6 +64,15 @@
             this.panel1.Size = new System.Drawing.Size(895, 79);
             this.panel1.TabIndex = 71;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Location = new System.Drawing.Point(141, 16);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(614, 46);
+            this.panel3.TabIndex = 15;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -78,15 +87,6 @@
             this.label11.TabIndex = 13;
             this.label11.Text = "Detail Donasi";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DarkBlue;
-            this.panel3.Controls.Add(this.label11);
-            this.panel3.Location = new System.Drawing.Point(141, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(614, 46);
-            this.panel3.TabIndex = 15;
-            // 
             // Detail_donasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -98,6 +98,7 @@
             this.Name = "Detail_donasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Detail_donasi";
+            this.Load += new System.EventHandler(this.Detail_donasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdetaildonasi)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

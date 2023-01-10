@@ -51,17 +51,17 @@ namespace Bank_Darah
         }
 
 
-        private void showdatastok()
+        private void showdonasi()
         {
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "Select * from stokDarah";
+            cmd.CommandText = "Select * from donasi";
             DataSet ds = new DataSet();
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            da.Fill(ds, "stokDarah");
+            da.Fill(ds, "donasi");
             Dgvstokdarah.DataSource = ds;
-            Dgvstokdarah.DataMember = "stokDarah";
+            Dgvstokdarah.DataMember = "donasi";
             Dgvstokdarah.ReadOnly = true;
         }
         ///Otomatisasi No Donasi
@@ -118,7 +118,7 @@ namespace Bank_Darah
             showdatapenerima();
             isicombopenerima();
             isicombopetugas();
-            showdatastok();
+            showdonasi();
             isicombostokdarah();
             Tglterima.Text = DateTime.Now.ToString("dd/MM/yyyy");
 
