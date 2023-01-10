@@ -18,7 +18,7 @@ namespace Bank_Darah
         }
 
         SqlConnection con = new SqlConnection
-       (@"Data Source =KIKI; Initial catalog = Bank_Darah4; Integrated Security = True");
+       (@"Data Source =KIKI; Initial catalog = Bank_DarahKIKI; Integrated Security = True");
         private void showdata()
         {
             SqlCommand cmd = new SqlCommand();

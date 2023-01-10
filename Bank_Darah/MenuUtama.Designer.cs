@@ -31,6 +31,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.berandaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pendonorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pendonorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,6 @@
             this.stokDarahToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Donasi = new System.Windows.Forms.ToolStripMenuItem();
             this.DetailDonasi = new System.Windows.Forms.ToolStripMenuItem();
-            this.laporanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,11 +83,18 @@
             this.berandaToolStripMenuItem.Size = new System.Drawing.Size(99, 21);
             this.berandaToolStripMenuItem.Text = "&Beranda";
             // 
+            // laporanToolStripMenuItem
+            // 
+            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
+            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.laporanToolStripMenuItem.Text = "lap&oran";
+            this.laporanToolStripMenuItem.Click += new System.EventHandler(this.laporanToolStripMenuItem_Click);
+            // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Image = global::Bank_Darah.Properties.Resources.logout;
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.logoutToolStripMenuItem.Text = "&Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -150,12 +157,6 @@
             this.DetailDonasi.Text = "D&etail Donasi";
             this.DetailDonasi.Click += new System.EventHandler(this.DetailDonasi_Click);
             // 
-            // laporanToolStripMenuItem
-            // 
-            this.laporanToolStripMenuItem.Name = "laporanToolStripMenuItem";
-            this.laporanToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.laporanToolStripMenuItem.Text = "lap&oran";
-            // 
             // MenuUtama
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,6 +171,7 @@
             this.Name = "MenuUtama";
             this.Text = "MenuUtama";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuUtama_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

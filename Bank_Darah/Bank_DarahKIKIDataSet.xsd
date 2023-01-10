@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Bank_DarahKIKIDataSet" targetNamespace="http://tempuri.org/Bank_DarahKIKIDataSet.xsd" xmlns:mstns="http://tempuri.org/Bank_DarahKIKIDataSet.xsd" xmlns="http://tempuri.org/Bank_DarahKIKIDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Bank_DarahKIKIConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Bank_DarahKIKIConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Bank_Darah.Properties.Settings.GlobalReference.Default.Bank_DarahKIKIConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="view_detaildonasiTableAdapter" GeneratorDataComponentClassName="view_detaildonasiTableAdapter" Name="view_detaildonasi" UserDataComponentName="view_detaildonasiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Bank_DarahKIKIConnectionString (Settings)" DbObjectName="Bank_DarahKIKI.dbo.view_detaildonasi" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nikpenerima, namaPenerima, tanggalLahirPenerima, genderPenerima, nohpPenerima, golDarPenerima, alamatPenerima, tglinputdata, jmlButuh, username, tglTerima, jumlahTerima, golDarah, jumlah, Expr5, nama FROM dbo.view_detaildonasi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nikpenerima" DataSetColumn="nikpenerima" />
+              <Mapping SourceColumn="namaPenerima" DataSetColumn="namaPenerima" />
+              <Mapping SourceColumn="tanggalLahirPenerima" DataSetColumn="tanggalLahirPenerima" />
+              <Mapping SourceColumn="genderPenerima" DataSetColumn="genderPenerima" />
+              <Mapping SourceColumn="nohpPenerima" DataSetColumn="nohpPenerima" />
+              <Mapping SourceColumn="golDarPenerima" DataSetColumn="golDarPenerima" />
+              <Mapping SourceColumn="alamatPenerima" DataSetColumn="alamatPenerima" />
+              <Mapping SourceColumn="tglinputdata" DataSetColumn="tglinputdata" />
+              <Mapping SourceColumn="jmlButuh" DataSetColumn="jmlButuh" />
+              <Mapping SourceColumn="username" DataSetColumn="username" />
+              <Mapping SourceColumn="tglTerima" DataSetColumn="tglTerima" />
+              <Mapping SourceColumn="jumlahTerima" DataSetColumn="jumlahTerima" />
+              <Mapping SourceColumn="golDarah" DataSetColumn="golDarah" />
+              <Mapping SourceColumn="jumlah" DataSetColumn="jumlah" />
+              <Mapping SourceColumn="Expr5" DataSetColumn="Expr5" />
+              <Mapping SourceColumn="nama" DataSetColumn="nama" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Bank_DarahKIKIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Bank_DarahKIKIDataSet" msprop:Generator_UserDSName="Bank_DarahKIKIDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="view_detaildonasi" msprop:Generator_TableClassName="view_detaildonasiDataTable" msprop:Generator_TableVarName="tableview_detaildonasi" msprop:Generator_TablePropName="view_detaildonasi" msprop:Generator_RowDeletingName="view_detaildonasiRowDeleting" msprop:Generator_RowChangingName="view_detaildonasiRowChanging" msprop:Generator_RowEvHandlerName="view_detaildonasiRowChangeEventHandler" msprop:Generator_RowDeletedName="view_detaildonasiRowDeleted" msprop:Generator_UserTableName="view_detaildonasi" msprop:Generator_RowChangedName="view_detaildonasiRowChanged" msprop:Generator_RowEvArgName="view_detaildonasiRowChangeEvent" msprop:Generator_RowClassName="view_detaildonasiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nikpenerima" msprop:Generator_ColumnVarNameInTable="columnnikpenerima" msprop:Generator_ColumnPropNameInRow="nikpenerima" msprop:Generator_ColumnPropNameInTable="nikpenerimaColumn" msprop:Generator_UserColumnName="nikpenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="16" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="namaPenerima" msprop:Generator_ColumnVarNameInTable="columnnamaPenerima" msprop:Generator_ColumnPropNameInRow="namaPenerima" msprop:Generator_ColumnPropNameInTable="namaPenerimaColumn" msprop:Generator_UserColumnName="namaPenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tanggalLahirPenerima" msprop:Generator_ColumnVarNameInTable="columntanggalLahirPenerima" msprop:Generator_ColumnPropNameInRow="tanggalLahirPenerima" msprop:Generator_ColumnPropNameInTable="tanggalLahirPenerimaColumn" msprop:Generator_UserColumnName="tanggalLahirPenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="genderPenerima" msprop:Generator_ColumnVarNameInTable="columngenderPenerima" msprop:Generator_ColumnPropNameInRow="genderPenerima" msprop:Generator_ColumnPropNameInTable="genderPenerimaColumn" msprop:Generator_UserColumnName="genderPenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nohpPenerima" msprop:Generator_ColumnVarNameInTable="columnnohpPenerima" msprop:Generator_ColumnPropNameInRow="nohpPenerima" msprop:Generator_ColumnPropNameInTable="nohpPenerimaColumn" msprop:Generator_UserColumnName="nohpPenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="golDarPenerima" msprop:Generator_ColumnVarNameInTable="columngolDarPenerima" msprop:Generator_ColumnPropNameInRow="golDarPenerima" msprop:Generator_ColumnPropNameInTable="golDarPenerimaColumn" msprop:Generator_UserColumnName="golDarPenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="alamatPenerima" msprop:Generator_ColumnVarNameInTable="columnalamatPenerima" msprop:Generator_ColumnPropNameInRow="alamatPenerima" msprop:Generator_ColumnPropNameInTable="alamatPenerimaColumn" msprop:Generator_UserColumnName="alamatPenerima">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tglinputdata" msprop:Generator_ColumnVarNameInTable="columntglinputdata" msprop:Generator_ColumnPropNameInRow="tglinputdata" msprop:Generator_ColumnPropNameInTable="tglinputdataColumn" msprop:Generator_UserColumnName="tglinputdata">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jmlButuh" msprop:Generator_ColumnVarNameInTable="columnjmlButuh" msprop:Generator_ColumnPropNameInRow="jmlButuh" msprop:Generator_ColumnPropNameInTable="jmlButuhColumn" msprop:Generator_UserColumnName="jmlButuh" type="xs:int" />
+              <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tglTerima" msprop:Generator_ColumnVarNameInTable="columntglTerima" msprop:Generator_ColumnPropNameInRow="tglTerima" msprop:Generator_ColumnPropNameInTable="tglTerimaColumn" msprop:Generator_UserColumnName="tglTerima" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jumlahTerima" msprop:Generator_ColumnVarNameInTable="columnjumlahTerima" msprop:Generator_ColumnPropNameInRow="jumlahTerima" msprop:Generator_ColumnPropNameInTable="jumlahTerimaColumn" msprop:Generator_UserColumnName="jumlahTerima" type="xs:int" />
+              <xs:element name="golDarah" msprop:Generator_ColumnVarNameInTable="columngolDarah" msprop:Generator_ColumnPropNameInRow="golDarah" msprop:Generator_ColumnPropNameInTable="golDarahColumn" msprop:Generator_UserColumnName="golDarah">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jumlah" msprop:Generator_ColumnVarNameInTable="columnjumlah" msprop:Generator_ColumnPropNameInRow="jumlah" msprop:Generator_ColumnPropNameInTable="jumlahColumn" msprop:Generator_UserColumnName="jumlah" type="xs:int" />
+              <xs:element name="Expr5" msprop:Generator_ColumnVarNameInTable="columnExpr5" msprop:Generator_ColumnPropNameInRow="Expr5" msprop:Generator_ColumnPropNameInTable="Expr5Column" msprop:Generator_UserColumnName="Expr5">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama" msprop:Generator_ColumnVarNameInTable="columnnama" msprop:Generator_ColumnPropNameInRow="nama" msprop:Generator_ColumnPropNameInTable="namaColumn" msprop:Generator_UserColumnName="nama">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -89,6 +89,17 @@ namespace Bank_Darah
             Detail_donasi dtldns = new Detail_donasi();
             dtldns.Show();
         }
+
+        private void MenuUtama_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void laporanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Laporan lprn = new Laporan();
+            lprn.Show();
+        }
     }
 }
         

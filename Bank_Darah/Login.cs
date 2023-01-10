@@ -28,7 +28,7 @@ namespace Bank_Darah
         private void btnLogin_Click(object sender, EventArgs e)
         {
             SqlConnection koneksi = new SqlConnection();
-            koneksi.ConnectionString = "Data Source=KIKI;Initial Catalog=Bank_DarahFix;Integrated Security=True";
+            koneksi.ConnectionString = "Data Source=KIKI;Initial Catalog=Bank_DarahKIKI;Integrated Security=True";
             SqlCommand scmd = new SqlCommand("select count (*) as cnt from admin where username=@Username and sandi=@Password", koneksi);
             scmd.Parameters.Clear();
             scmd.Parameters.AddWithValue("@Username", txtUsername.Text);

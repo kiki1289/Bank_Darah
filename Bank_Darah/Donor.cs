@@ -14,7 +14,7 @@ namespace Bank_Darah
     {
         ///Kobeksi DB 
         SqlConnection con = new SqlConnection
-        (@"Data Source=KIKI;Initial Catalog=Bank_Darah4;Integrated Security=true");
+        (@"Data Source=KIKI;Initial Catalog=Bank_DarahKIKI;Integrated Security=true");
         public Donor()
         {
             InitializeComponent();
@@ -167,7 +167,7 @@ namespace Bank_Darah
             cmd2.CommandType = CommandType.Text;
             cmd2.ExecuteNonQuery();
 
-
+            showdonasi();
              berhenti:
             ;
         }

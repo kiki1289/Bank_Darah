@@ -35,13 +35,19 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.NikPendonor = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.CbStatus = new System.Windows.Forms.ComboBox();
             this.keluar = new System.Windows.Forms.Button();
+            this.txtstatus = new System.Windows.Forms.TextBox();
+            this.CboPendonor = new System.Windows.Forms.ComboBox();
+            this.nama = new System.Windows.Forms.TextBox();
+            this.txtidDarah = new System.Windows.Forms.TextBox();
+            this.cbostokdarah = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtgoldar = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -55,12 +61,13 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(307, 270);
+            this.btnSave.Location = new System.Drawing.Point(307, 341);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(109, 23);
             this.btnSave.TabIndex = 88;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // NamaPendonor
             // 
@@ -104,14 +111,6 @@
             this.label9.Size = new System.Drawing.Size(74, 13);
             this.label9.TabIndex = 79;
             this.label9.Text = "NIK Pendonor";
-            // 
-            // NikPendonor
-            // 
-            this.NikPendonor.Location = new System.Drawing.Point(252, 143);
-            this.NikPendonor.Name = "NikPendonor";
-            this.NikPendonor.Size = new System.Drawing.Size(284, 20);
-            this.NikPendonor.TabIndex = 93;
-            this.NikPendonor.TextChanged += new System.EventHandler(this.NikPendonor_TextChanged);
             // 
             // panel1
             // 
@@ -161,6 +160,7 @@
             this.CbStatus.Name = "CbStatus";
             this.CbStatus.Size = new System.Drawing.Size(192, 21);
             this.CbStatus.TabIndex = 98;
+            this.CbStatus.SelectedIndexChanged += new System.EventHandler(this.CbStatus_SelectedIndexChanged);
             // 
             // keluar
             // 
@@ -176,11 +176,73 @@
             this.keluar.UseVisualStyleBackColor = false;
             this.keluar.Click += new System.EventHandler(this.keluar_Click);
             // 
+            // txtstatus
+            // 
+            this.txtstatus.Location = new System.Drawing.Point(520, 229);
+            this.txtstatus.Name = "txtstatus";
+            this.txtstatus.Size = new System.Drawing.Size(56, 20);
+            this.txtstatus.TabIndex = 100;
+            // 
+            // CboPendonor
+            // 
+            this.CboPendonor.FormattingEnabled = true;
+            this.CboPendonor.Location = new System.Drawing.Point(253, 140);
+            this.CboPendonor.Name = "CboPendonor";
+            this.CboPendonor.Size = new System.Drawing.Size(192, 21);
+            this.CboPendonor.TabIndex = 101;
+            this.CboPendonor.SelectedIndexChanged += new System.EventHandler(this.CboPendonor_SelectedIndexChanged);
+            // 
+            // nama
+            // 
+            this.nama.Location = new System.Drawing.Point(307, 255);
+            this.nama.Name = "nama";
+            this.nama.Size = new System.Drawing.Size(192, 20);
+            this.nama.TabIndex = 102;
+            // 
+            // txtidDarah
+            // 
+            this.txtidDarah.Location = new System.Drawing.Point(364, 281);
+            this.txtidDarah.Name = "txtidDarah";
+            this.txtidDarah.Size = new System.Drawing.Size(33, 20);
+            this.txtidDarah.TabIndex = 125;
+            // 
+            // cbostokdarah
+            // 
+            this.cbostokdarah.FormattingEnabled = true;
+            this.cbostokdarah.Location = new System.Drawing.Point(308, 281);
+            this.cbostokdarah.Name = "cbostokdarah";
+            this.cbostokdarah.Size = new System.Drawing.Size(50, 21);
+            this.cbostokdarah.TabIndex = 124;
+            this.cbostokdarah.SelectedIndexChanged += new System.EventHandler(this.cbostokdarah_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(250, 289);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(40, 13);
+            this.label2.TabIndex = 126;
+            this.label2.Text = "GolDar";
+            // 
+            // txtgoldar
+            // 
+            this.txtgoldar.Location = new System.Drawing.Point(481, 140);
+            this.txtgoldar.Name = "txtgoldar";
+            this.txtgoldar.Size = new System.Drawing.Size(56, 20);
+            this.txtgoldar.TabIndex = 127;
+            // 
             // StatusDarah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(728, 459);
+            this.Controls.Add(this.txtgoldar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtidDarah);
+            this.Controls.Add(this.cbostokdarah);
+            this.Controls.Add(this.nama);
+            this.Controls.Add(this.CboPendonor);
+            this.Controls.Add(this.txtstatus);
             this.Controls.Add(this.keluar);
             this.Controls.Add(this.CbStatus);
             this.Controls.Add(this.label11);
@@ -191,7 +253,6 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.NikPendonor);
             this.Controls.Add(this.panel1);
             this.Name = "StatusDarah";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -214,12 +275,18 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox NikPendonor;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox CbStatus;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button keluar;
+        private System.Windows.Forms.TextBox txtstatus;
+        private System.Windows.Forms.ComboBox CboPendonor;
+        private System.Windows.Forms.TextBox nama;
+        private System.Windows.Forms.TextBox txtidDarah;
+        private System.Windows.Forms.ComboBox cbostokdarah;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtgoldar;
     }
 }

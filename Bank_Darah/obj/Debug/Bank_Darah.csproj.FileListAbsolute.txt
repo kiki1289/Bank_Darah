@@ -168,3 +168,6 @@ D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.St
 D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.StokDarah.resources
 D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.csproj.GenerateResource.Cache
 D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\Bank_Darah.Laporan.resources
+D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\bin\Debug\Bank_Darah.exe.config
+D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\RdlCompile.cache
+D:\github\3\Bank_Darah-main_2\Bank_Darah-main\Bank_Darah\obj\Debug\RdlCompile.compiled

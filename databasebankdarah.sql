@@ -1,6 +1,6 @@
 
-create database Bank_Darah
-use Bank_Darah
+create database Bank_DarahKIKI
+use Bank_DarahKIKI
 
 CREATE TABLE admin(
 	username VARCHAR(10) NOT NULL PRIMARY KEY,
@@ -16,7 +16,7 @@ CREATE TABLE pendonor(
 	nohp VARCHAR(15) NOT NULL,
 	golDar VARCHAR(5) NOT NULL,
 	alamat VARCHAR(200) NOT NULL,
-	tglDonor CHAR(10) NOT NULL,
+	tglDonor VARCHAR(10) NOT NULL,
 	nDonor INT NOT NULL DEFAULT 0,
 	username VARCHAR(10) NOT NULL,
 	CONSTRAINT FK_ADMIN FOREIGN KEY (username) REFERENCES 
@@ -30,7 +30,7 @@ CREATE TABLE penerima(
 	nohpPenerima VARCHAR(15) NOT NULL,
 	golDarPenerima VARCHAR(5) NOT NULL,
 	alamatPenerima VARCHAR(200) NOT NULL,
-	tglinputdata CHAR(10 ) NOT NULL,
+	tglinputdata VARCHAR(10 ) NOT NULL,
 	jmlButuh INT NOT NULL DEFAULT 0,
 	username VARCHAR(10) NOT NULL,
 	CONSTRAINT FK_ADMIN1 FOREIGN KEY (username) REFERENCES 
@@ -46,7 +46,6 @@ CREATE TABLE stokDarah(
 CREATE TABLE donasi(
 	idDonasi VARCHAR(10) NOT NULL PRIMARY KEY,
 	tglTerima CHAR(10) NOT NULL,
-	nik VARCHAR(10) NOT NULL,
 	jumlahTerima INT NOT NULL DEFAULT 0,
 	idStokDarah VARCHAR(10) NOT NULL,
 	CONSTRAINT FK_STOKDARAH FOREIGN KEY (idStokDarah) REFERENCES 
@@ -57,9 +56,9 @@ CREATE TABLE donasi(
 );
 
 CREATE TABLE detailDonasi(
-	nikpenerima VARCHAR(16) NOT NULL,
-	CONSTRAINT FK_PENERIMA1 FOREIGN KEY (nikpenerima) REFERENCES 
-	penerima(nikpenerima),
+	username VARCHAR(10) NOT NULL,
+	CONSTRAINT FK_ADMIN2 FOREIGN KEY (username) REFERENCES 
+	admin (username),
 	idDonasi VARCHAR(10) NOT NULL,
 	CONSTRAINT FK_DONASI FOREIGN KEY (idDonasi) REFERENCES 
 	donasi(idDonasi)
@@ -69,8 +68,32 @@ CREATE TABLE kelayakandarah(
 	nikPendonor VARCHAR(16) NOT NULL,
 	CONSTRAINT FK_PENDONOR FOREIGN KEY (nikPendonor) REFERENCES 
 	pendonor(nikPendonor),
+	idstd VARCHAR(10) NOT NULL,
+	CONSTRAINT FK_STATUSDARAH FOREIGN KEY (idstd) REFERENCES 
+	statusdarah(idstd),
 	idStokDarah VARCHAR(10) NOT NULL,
 	CONSTRAINT FK_STOKDARAH1 FOREIGN KEY (idStokDarah) REFERENCES 
 	stokDarah(idStokDarah),
-	kelayakan VARCHAR(10) NOT NULL,
+	inisial INT NOT NULL DEFAULT 0,
 );
+CREATE TABLE statusdarah(
+	idstd VARCHAR(10) NOT NULL PRIMARY KEY,
+	nama VARCHAR(10) NOT NULL,
+	inisial INT NOT NULL DEFAULT 0,
+);
+use Bank_DarahKIKI
+alter table donasi
+alter column tglTerima varchar(10)
+
+alter table pendonor
+alter column tanggal_lahirPendonor varchar(10)
+
+
+create procedure ADDDONASI
+@id varchar (10), @tglTerima varchar(10), @jumlahterima int, @idsd varchar(10), @nik varchar(16)
+as
+if exists(select * from donasi where idDonasi = @id)
+update donasi set tglTerima = @tglTerima, jumlahTerima = @jumlahterima, idStokDarah = @idsd, nikpenerima = @nik
+where idDonasi = @id
+else
+insert into donasi values(@id, @tglTerima,@jumlahterima,@idsd,@nik)

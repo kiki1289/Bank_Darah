@@ -18,7 +18,7 @@ namespace Bank_Darah
         }
 
         SqlConnection con = new SqlConnection
-        (@"Data Source=KIKI;Initial Catalog=Bank_Darah4;Integrated Security=true");
+        (@"Data Source=KIKI;Initial Catalog=Bank_DarahKIKI;Integrated Security=true");
 
         private void showdetaildonasi()
         {

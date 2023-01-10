@@ -18,8 +18,15 @@ namespace Bank_Darah
 
         private void Laporan_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'Bank_DarahKIKIDataSet.view_detaildonasi' table. You can move, or remove it, as needed.
+            this.view_detaildonasiTableAdapter.Fill(this.Bank_DarahKIKIDataSet.view_detaildonasi);
 
             this.reportViewer1.RefreshReport();
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

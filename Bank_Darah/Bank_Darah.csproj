@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bank_DarahKIKIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bank_DarahKIKIDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Detail_donasi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,7 +64,6 @@
     <Compile Include="Donor.Designer.cs">
       <DependentUpon>Donor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Koneksi.cs" />
     <Compile Include="Laporan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,12 +139,25 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="StatusDarah.resx">
       <DependentUpon>StatusDarah.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StokDarah.resx">
       <DependentUpon>StokDarah.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Bank_DarahKIKIDataSet.xsc">
+      <DependentUpon>Bank_DarahKIKIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bank_DarahKIKIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bank_DarahKIKIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bank_DarahKIKIDataSet.xss">
+      <DependentUpon>Bank_DarahKIKIDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
